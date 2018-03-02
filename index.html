@@ -148,13 +148,16 @@
         </ul>
         <a class="button" href="#">Подробнее о нас</a>
       </section>
+
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <img class="map" src="img/map.jpg" alt="Наш офис находится по адресу улица Строителей, дом 15" width="560" height="222" />
         <a class="button" href="">Напишите нам</a>
       </section>
+
     </main>
+
     <footer class="main-footer">
       <a class="main-footer-logo" href="">
         <img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="150" height="52" />
@@ -180,6 +183,31 @@
         <img src="img/academy-logo.svg" alt="Логотип HTML Академии" width="27" height="35" />
       </a>
     </footer>
+
+    <section class="popup popup-feedback">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form action="">
+        <label for="">
+          <span>Ваше имя</span>
+          <input type="text" name="name" />
+        </label>
+        <label for="">
+          <span>Ваш e-mail</span>
+          <input type="email" name="email" />
+        </label>
+        <label for="">
+          <span>Текст письма</span>
+          <textarea name="text" id=""></textarea>
+        </label>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <span class="popup-close">x</span>
+    </section>
+
+    <section class="popup popup-map">
+      <div class="map-container"></div>
+      <span class="popup-close">x</span>
+    </section>
   </body>
 
 </html>
