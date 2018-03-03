@@ -9,30 +9,28 @@
   <body>
     <header class="page-header">
       <a class="logo" href="index.html">
-        <img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="150" height="52">
+        <img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="167" height="54">
       </a>
       <nav class="main-navigation">
-        <!-- Навигация по функционалу сайта -->
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="GET">
           <input class="search-input" type="search">
           <button type="submit">Найти</button>
         </form>
-        <ul class="user-menu user-authorized">
-          <li><a class="login-link" href="#">Войти</a></li>
+        <ul class="user-menu">
+          <li><a class="login-link" href="profile.html">Валентин Петухов</a></li>
           <li><a class="logout-link" href="#">Выйти</a></li>
         </ul>
         <ul class="shop-menu">
           <li><a class="compare-link" href="#">Сравнить</a></li>
           <li><a class="cart-link" href="#">Корзина</a></li>
         </ul>
-        <!-- Навигация по страницам сайта -->
         <ul class="site-navigation">
           <li> <a class="submenu-toggle" href="#">Каталог товаров</a>
             <ul class="submenu">
               <li class="submenu-group">
                 <ul>
                   <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="catalog.html">Моноподы для селфи</a></li>
                   <li><a href="#">Экшн-камеры</a></li>
                 </ul>
               </li>
@@ -60,7 +58,7 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог товаров</a></li>
-        <li><a href="#">Моноподы для селфи</a></li>
+        <li><a href="catalog.html">Моноподы для селфи</a></li>
       </ul>
       <section class="filters">
         <h2>Фильтр:</h2>
@@ -68,8 +66,8 @@
           <fieldset>
             <legend>Стоимость</legend>
             <div class="range"></div>
-            <input class="range-from" type="text">
-            <input class="range-to" type="text">
+            <input class="range-from" name="price-from" type="text" placeholder="от 0">
+            <input class="range-to" name="price-to" type="text" placeholder="до 5000">
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
@@ -102,7 +100,7 @@
             </label>
             <label>
               <span>Нет</span>
-              <input type="radio" name="bluetooth" value="on">
+              <input type="radio" name="bluetooth" value="off">
             </label>
           </fieldset>
           <button class="button" type="submit">Показать</button>
@@ -125,7 +123,7 @@
         <ul class="catalog-items">
           <li>
             <article>
-              <div class="img">
+              <div class="catalog-item-img">
                 <img src="img/catalog-item-1.jpg" alt="Изображение любительской селфи-палки" width="360" height="380">
               </div>
               <h3><a href="#">Любительская селфи-палка</a></h3>
@@ -136,7 +134,7 @@
           </li>
           <li>
             <article>
-              <div class="img">
+              <div class="catalog-item-img">
                 <img src="img/catalog-item-2.jpg" alt="Изображение профессиональной селфи-палки" width="360" height="380">
               </div>
               <h3><a href="#">Профессиональная селфи-палка</a></h3>
@@ -147,7 +145,7 @@
           </li>
           <li>
             <article>
-              <div class="img">
+              <div class="catalog-item-img">
                 <img src="img/catalog-item-3.jpg" alt="Изображение непотопляемой селфи-палки" width="360" height="380">
               </div>
               <h3><a href="#">Непотопляемая селфи-палка</a></h3>
@@ -158,7 +156,7 @@
           </li>
           <li class="new-item">
             <article>
-              <div class="img">
+              <div class="catalog-item-img">
                 <img src="img/catalog-item-4.jpg" alt="Изображение селфи-палки &laquo;Следуй за мной&raquo;" width="360" height="380">
               </div>
               <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
@@ -181,11 +179,11 @@
     </main>
     <footer class="page-footer">
       <a class="logo" href="index.html">
-        <img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="150" height="52">
+        <img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="167" height="54">
       </a>
       <span class="address">г. Москва, ул. Строителей, 15</span>
-      <ul class="user-menu user-authorized">
-        <li><a class="login-link" href="#">Войти</a></li>
+      <ul class="user-menu">
+        <li><a class="login-link" href="profile.html">Валентин Петухов</a></li>
         <li><a class="logout-link" href="#">Выйти</a></li>
       </ul>
       <ul class="shop-menu">
@@ -203,7 +201,7 @@
         <li><a href="https://www.instagram.com/">Мы в Инстаграме</a></li>
         <li><a href="https://twitter.com/">Мы в Твитере</a></li>
       </ul>
-      <a class="made-by-logo" href="https://htmlacademy.ru/">
+      <a class="made-by-logo" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/academy-logo.svg" alt="Логотип HTML Академии" width="27" height="35">
       </a>
     </footer>

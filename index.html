@@ -9,10 +9,9 @@
   <body>
     <header class="page-header">
       <a class="logo" href="index.html">
-        <img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="150" height="52">
+        <img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="167" height="54">
       </a>
       <nav class="main-navigation">
-        <!-- Навигация по функционалу сайта -->
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="GET">
           <input class="search-input" type="search">
           <button type="submit">Найти</button>
@@ -24,14 +23,13 @@
           <li><a class="compare-link" href="#">Сравнить</a></li>
           <li><a class="cart-link" href="#">Корзина</a></li>
         </ul>
-        <!-- Навигация по страницам сайта -->
         <ul class="site-navigation">
-          <li> <a class="submenu-toggle" href="#">Каталог товаров</a>
+          <li> <a class="submenu-toggle" href="catalog.html">Каталог товаров</a>
             <ul class="submenu">
               <li class="submenu-group">
                 <ul>
                   <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="catalog.html">Моноподы для селфи</a></li>
                   <li><a href="#">Экшн-камеры</a></li>
                 </ul>
               </li>
@@ -135,7 +133,7 @@
           </li>
           <li>
             <div class="category-icon"></div>
-            <h3><a href="#">Моноподы для селфи</a></h3>
+            <h3><a href="catalog.html">Моноподы для селфи</a></h3>
           </li>
           <li>
             <div class="category-icon"></div>
@@ -205,15 +203,15 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <div class="map-container">
+        <div class="map-container js-popup-toggle">
           <img class="map" src="img/map.jpg" alt="Наш офис находится по адресу улица Строителей, дом 15" width="560" height="222">
         </div>
-        <a class="button" href="#">Напишите нам</a>
+        <a class="button js-popup-toggle" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
       <a class="logo" href="index.html">
-        <img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="150" height="52">
+        <img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="167" height="54">
       </a>
       <span class="address">г. Москва, ул. Строителей, 15</span>
       <ul class="user-menu">
@@ -240,7 +238,7 @@
     </footer>
     <section class="popup popup-feedback">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form action="/https://echo.htmlacademy.ru/" method="POST">
+      <form action="https://echo.htmlacademy.ru/" method="POST">
         <label>
           <span>Ваше имя</span>
           <input type="text" name="name" placeholder="Имя фамилия">
