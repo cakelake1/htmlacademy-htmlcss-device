@@ -8,12 +8,13 @@
 
   <body>
     <header class="page-header">
-      <a class="logo" href="index.html">
+      <a class="logo" href="index.html" aria-label="Ссылка на главную страницу">
         <img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="164" height="36">
       </a>
       <nav class="main-navigation">
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="GET">
-          <input class="search-input" type="search">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="POST">
+          <label class="visually-hidden" for="search">Поле поиска</label>
+          <input class="search-input" type="search" name="query" id="search">
           <button type="submit">Найти</button>
         </form>
         <ul class="user-menu">
@@ -67,11 +68,11 @@
             <legend>Стоимость</legend>
             <div class="range"></div>
             <label>
-              от
+              <span>от</span>
               <input class="range-from" name="price-from" type="text" placeholder="0">
             </label>
             <label>
-              до
+              <span>до</span>
               <input class="range-to" name="price-to" type="text" placeholder="5000">
             </label>
           </fieldset>
@@ -102,7 +103,7 @@
             <legend>Bluetooth</legend>
             <label>
               <span>Есть</span>
-              <input type="radio" name="bluetooth" value="on" checked>
+              <input type="radio" name="bluetooth" value="on">
             </label>
             <label>
               <span>Нет</span>
@@ -122,8 +123,8 @@
             <li><a href="#">По&nbsp;популярности</a></li>
           </ul>
           <ul class="sort-order-controls">
-            <li><a class="order-increasing active" href="#"></a></li>
-            <li><a class="order-decreasing" href="#"></a></li>
+            <li><a class="order-increasing active" href="#" aria-label="Отсортировать по возрастанию"></a></li>
+            <li><a class="order-decreasing" href="#" aria-label="Отсортировать по убыванию"></a></li>
           </ul>
         </header>
         <section class="catalog-items">
@@ -176,7 +177,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="logo" href="index.html">
+      <a class="logo" href="index.html" aria-label="Ссылка на главную страницу">
         <img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="164" height="36">
       </a>
       <span class="address">г. Москва, ул. Строителей, 15</span>
@@ -193,13 +194,13 @@
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <span class="tel">Тел.: <a href="tel:+74954959595">+7&nbsp;(495)&nbsp;495-95-95</a></span>
+      <span class="tel">Тел.: <a href="tel:+74954959595" aria-label="Номер телефона">+7&nbsp;(495)&nbsp;495-95-95</a></span>
       <ul class="social-links">
-        <li><a href="https://www.facebook.com/">Мы в Фейсбуке</a></li>
-        <li><a href="https://www.instagram.com/">Мы в Инстаграме</a></li>
-        <li><a href="https://twitter.com/">Мы в Твитере</a></li>
+        <li><a href="https://www.facebook.com/" aria-label="Мы в Фейсбуке"></a></li>
+        <li><a href="https://www.instagram.com/" aria-label="Мы в Инстаграме"></a></li>
+        <li><a href="https://twitter.com/" aria-label="Мы в Твитере"></a></li>
       </ul>
-      <a class="made-by-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="made-by-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на базовый интенсив HTML Academy по HTML и CSS">
         <img src="img/logo-html.svg" alt="Логотип HTML Академии" width="27" height="35">
       </a>
     </footer>
