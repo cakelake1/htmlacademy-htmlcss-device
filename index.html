@@ -11,38 +11,41 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo logo" href="index.html" aria-label="Ссылка на главную страницу">
-        <img class="logo__img" src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="164" height="36">
+        <svg class="logo__img logo__img-black" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="164px" height="36px">
+          <path fill-rule="evenodd" d="M163.881,27.119 L163.881,34.511 L142.617,34.511 L142.617,0.911 L163.639,0.911 L163.639,8.303 L150.349,8.303 L150.349,13.871 L162.431,13.871 L162.431,21.167 L150.349,21.167 L150.349,27.119 L163.881,27.119 ZM124.010,27.695 C125.717,27.695 127.272,27.327 128.674,26.591 C130.075,25.855 131.130,24.847 131.839,23.567 L138.509,27.407 C137.059,29.807 135.045,31.703 132.468,33.095 C129.889,34.487 127.071,35.183 124.010,35.183 C118.951,35.183 114.755,33.511 111.420,30.167 C108.086,26.823 106.418,22.671 106.418,17.711 C106.418,12.751 108.086,8.599 111.420,5.255 C114.755,1.911 118.951,0.239 124.010,0.239 C127.038,0.239 129.841,0.935 132.419,2.327 C134.996,3.719 137.026,5.615 138.509,8.015 L131.839,11.855 C131.098,10.543 130.034,9.527 128.650,8.807 C127.264,8.087 125.717,7.727 124.010,7.727 C121.014,7.727 118.621,8.639 116.833,10.463 C115.045,12.287 114.151,14.703 114.151,17.711 C114.151,20.719 115.045,23.135 116.833,24.959 C118.621,26.783 121.014,27.695 124.010,27.695 ZM93.853,0.911 L101.586,0.911 L101.586,34.511 L93.853,34.511 L93.853,0.911 ZM69.593,34.511 L58.574,0.911 L67.031,0.911 L74.522,25.631 L82.013,0.911 L90.471,0.911 L79.452,34.511 L69.593,34.511 ZM35.376,0.911 L56.399,0.911 L56.399,8.303 L43.109,8.303 L43.109,13.871 L55.191,13.871 L55.191,21.167 L43.109,21.167 L43.109,27.119 L56.641,27.119 L56.641,34.511 L35.376,34.511 L35.376,0.911 ZM14.112,34.511 L0.580,34.511 L0.580,0.911 L14.112,0.911 C18.783,0.911 22.690,2.519 25.832,5.735 C28.973,8.951 30.544,12.943 30.544,17.711 C30.544,22.479 28.973,26.471 25.832,29.687 C22.690,32.903 18.783,34.511 14.112,34.511 ZM20.612,10.871 C18.952,9.159 16.786,8.303 14.112,8.303 L8.313,8.303 L8.313,27.119 L14.112,27.119 C16.786,27.119 18.952,26.263 20.612,24.551 C22.271,22.839 23.101,20.559 23.101,17.711 C23.101,14.863 22.271,12.583 20.612,10.871 Z" />
+        </svg>
       </a>
       <nav class="main-nav">
-        <form class="main-nav__search-form search-form" action="https://echo.htmlacademy.ru/" method="POST">
-          <label class="search-form__form-field form-field">
-            <span class="form-field__label visually-hidden">Поиск по сайту</span>
+        <form class="main-nav__search search-form" action="https://echo.htmlacademy.ru/" method="POST">
+          <label class="search-form__label form-field">
+            <span class="visually-hidden">Поиск по сайту</span>
             <input class="form-field__input form-field__input--search" type="search" name="query" placeholder="Поиск по сайту">
           </label>
-          <button class="search-form__submit search-submit" type="submit">Найти</button>
+          <button class="search-form__submit search-btn" type="submit">Найти</button>
         </form>
-        <div class="main-nav__user-menu user-menu">
-          <a class="user-menu__item user-menu__item--login" href="#">Войти</a>
+
+        <div class="main-nav__user menu">
+          <a class="menu__link menu__link--login" href="#">Войти</a>
         </div>
-        <div class="main-nav__shop-menu shop-menu">
-          <a class="shop-menu__item shop-menu__item--compare" href="#">Сравнить</a>
-          <a class="shop-menu__item shop-menu__item--cart" href="#">Корзина</a>
+        <div class="main-nav__shop menu">
+          <a class="menu__link menu__link--compare" href="#">Сравнить</a>
+          <a class="menu__link menu__link--cart" href="#">Корзина</a>
         </div>
-        <ul class="main-nav__site-nav site-nav">
+        <ul class="main-nav__site site-nav">
           <li class="site-nav__item submenu">
-            <a class="submenu__toggle" href="catalog.html">Каталог товаров</a>
+            <a class="site-nav__link submenu__toggle" href="catalog.html">Каталог товаров</a>
             <div class="submenu__inner">
               <div class="submenu__group">
-                <a class="site-nav__link" href="#">Виртуальная реальность</a>
-                <a class="site-nav__link" href="#">Моноподы для селфи</a>
-                <a class="site-nav__link" href="#">Экшн-камеры</a>
+                <a class="submenu__link" href="#">Виртуальная реальность</a>
+                <a class="submenu__link" href="#">Моноподы для селфи</a>
+                <a class="submenu__link" href="#">Экшн-камеры</a>
               </div>
               <div class="submenu__group">
-                <a class="site-nav__link" href="#">Фитнес-браслеты</a>
-                <a class="site-nav__link" href="#">Умные часы</a>
+                <a class="submenu__link" href="#">Фитнес-браслеты</a>
+                <a class="submenu__link" href="#">Умные часы</a>
               </div>
               <div class="submenu__group">
-                <a class="site-nav__link" href="#">Квадрокоптеры</a> </div>
+                <a class="submenu__link" href="#">Квадрокоптеры</a> </div>
             </div>
           </li>
           <li class="site-nav__item">
@@ -66,8 +69,8 @@
             <h3 class="visually-hidden">Селфи-палка</h3>
             <img class="popular-slider__img" src="img/popular-slider-1.png" alt="Изображение селфи-палки" width="384" height="486">
             <span class="popular-slider__number">01</span>
-            <p class="popular-slider__lead">Делай Селфи, как Бен Стиллер!</p>
-            <p class="popular-slider__description">Самая длинная палка для селфи доступна в&nbsp;нашем магазине. Восемь (Восемь, Карл!) метров длиной и&nbsp;весом всего 5&nbsp;килограмм.</p>
+            <p class="popular-slider__lead title">Делай Селфи, как Бен Стиллер!</p>
+            <p class="popular-slider__description description">Самая длинная палка для селфи доступна в&nbsp;нашем магазине. Восемь (Восемь, Карл!) метров длиной и&nbsp;весом всего 5&nbsp;килограмм.</p>
             <a class="popular-slider__button button" href="#">Подробнее</a>
             <table class="popular-slider__properties-table properties-table">
               <tr class="properties-table__values">
@@ -86,8 +89,8 @@
             <h3 class="visually-hidden">Фитнес-браслет</h3>
             <img class="popular-slider__img" src="img/popular-slider-2.png" alt="Изображение фитнес-браслета" width="345" height="485">
             <span class="popular-slider__number">02</span>
-            <p class="popular-slider__lead">Худеем правильно!</p>
-            <p class="popular-slider__description">Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы не&nbsp;пропускать занятия и&nbsp;соблюдать диету.</p>
+            <p class="popular-slider__lead title">Худеем правильно!</p>
+            <p class="popular-slider__description description">Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы не&nbsp;пропускать занятия и&nbsp;соблюдать диету.</p>
             <a class="popular-slider__button button" href="#">Подробнее</a>
             <table class="popular-slider__properties-table properties-table">
               <tr class="properties-table__values">
@@ -102,8 +105,8 @@
             <h3 class="visually-hidden">Квадрокоптер</h3>
             <img class="popular-slider__img" src="img/popular-slider-3.png" alt="Изображение квадрокоптера" width="526" height="334">
             <span class="popular-slider__number">03</span>
-            <p class="popular-slider__lead">Порхает как бабочка, жалит как пчела!</p>
-            <p class="popular-slider__description">Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <p class="popular-slider__lead title">Порхает как бабочка, жалит как пчела!</p>
+            <p class="popular-slider__description description">Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="popular-slider__button button" href="#">Подробнее</a>
             <table class="popular-slider__properties-table properties-table">
               <tr class="properties-table__values">
@@ -117,10 +120,10 @@
             </table>
           </li>
         </ul>
-        <div class="popular-slider__slider-controls slider-controls">
-          <button class="slider-controls__control slider-controls__control--circle" aria-label="Перейти на первый слайд" type="button"></button>
-          <button class="slider-controls__control slider-controls__control--circle" aria-label="Перейти на второй слайд" type="button"></button>
-          <button class="slider-controls__control slider-controls__control--circle" aria-label="Перейти на третий слайд" type="button"></button>
+        <div class="popular-slider__controls slider-controls">
+          <button class="slider-controls__button slider-controls__button--circle button" aria-label="Перейти на первый слайд" type="button"></button>
+          <button class="slider-controls__button slider-controls__button--circle button" aria-label="Перейти на второй слайд" type="button"></button>
+          <button class="slider-controls__button slider-controls__button--circle button" aria-label="Перейти на третий слайд" type="button"></button>
         </div>
       </section>
       <section class="categories">
@@ -160,23 +163,23 @@
       </section>
       <section class="services-slider">
         <h2 class="visually-hidden">Услуги</h2>
-        <div class="services-slider__slider-controls slider-controls">
-            <button class="slider-controls__control slider-controls__control--button button">Доставка</button>
-            <button class="slider-controls__control slider-controls__control--button button">Гарантия</button>
-            <button class="slider-controls__control slider-controls__control--button button">Кредит</button>
+        <div class="services-slider__controls slider-controls">
+          <button class="slider-controls__button button">Доставка</button>
+          <button class="slider-controls__button button">Гарантия</button>
+          <button class="slider-controls__button button">Кредит</button>
         </div>
         <ul class="services-slider__slides">
           <li class="services-slider__slide services-slider__slide--delivery">
-            <h3 class="services-slider__title">Доставка</h3>
-            <p class="services-slider__description">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж.</p>
+            <h3 class="services-slider__title title">Доставка</h3>
+            <p class="services-slider__description description">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж.</p>
           </li>
           <li class="services-slider__slide services-slider__slide--guarantee">
-            <h3 class="services-slider__title">Гарантия</h3>
-            <p class="services-slider__description">Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом&nbsp;&mdash; не&nbsp;переживайте, мы&nbsp;выдадим вам новый. Товар, не&nbsp;дом, конечно&nbsp;же.</p>
+            <h3 class="services-slider__title title">Гарантия</h3>
+            <p class="services-slider__description description">Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом&nbsp;&mdash; не&nbsp;переживайте, мы&nbsp;выдадим вам новый. Товар, не&nbsp;дом, конечно&nbsp;же.</p>
           </li>
           <li class="services-slider__slide services-slider__slide--credit">
-            <h3 class="services-slider__title">Кредит</h3>
-            <p class="services-slider__description">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <h3 class="services-slider__title title">Кредит</h3>
+            <p class="services-slider__description description">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </li>
         </ul>
       </section>
@@ -198,9 +201,9 @@
         </div>
       </section>
       <section class="about">
-        <h2 class="about__title">О&nbsp;нас</h2>
-        <p class="about__descrtiption">Огромный выбор гаджетов не&nbsp;оставит равнодушным гика, который есть в&nbsp;каждом из&nbsp;нас.</p>
-        <p class="about__description">Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдаленные точки России! DEVICE работает со&nbsp;многими транспортными компаниями:</p>
+        <h2 class="about__title title">О&nbsp;нас</h2>
+        <p class="about__descrtiption description">Огромный выбор гаджетов не&nbsp;оставит равнодушным гика, который есть в&nbsp;каждом из&nbsp;нас.</p>
+        <p class="about__description description">Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдаленные точки России! DEVICE работает со&nbsp;многими транспортными компаниями:</p>
         <ul class="about__partners-list partners-list">
           <li class="partners-list__item">Деловые Линии</li>
           <li class="partners-list__item">Автотрейдинг</li>
@@ -209,7 +212,7 @@
         <a class="button" href="#">Подробнее о&nbsp;нас</a>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
+        <h2 class="contacts__title title">Контакты</h2>
         <p class="contacts__description">Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div class="map-container js-popup-toggle">
           <img class="map-container__map" src="img/map-small.jpg" alt="Наш офис находится по адресу улица Строителей, дом 15" width="560" height="222">
@@ -218,25 +221,27 @@
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo" href="index.html" aria-label="Ссылка на главную страницу">
-        <img class="logo__img" src="img/logo.svg" alt="Логотип интернет-магазина гаджетов &laquo;Девайс&raquo;" width="164" height="36">
+        <svg class="logo__img logo__img-yellow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="164px" height="36px">
+          <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M163.881,27.119 L163.881,34.511 L142.617,34.511 L142.617,0.911 L163.639,0.911 L163.639,8.303 L150.349,8.303 L150.349,13.871 L162.431,13.871 L162.431,21.167 L150.349,21.167 L150.349,27.119 L163.881,27.119 ZM124.010,27.695 C125.717,27.695 127.272,27.327 128.674,26.591 C130.075,25.855 131.130,24.847 131.839,23.567 L138.509,27.407 C137.059,29.807 135.045,31.703 132.468,33.095 C129.889,34.487 127.071,35.183 124.010,35.183 C118.951,35.183 114.755,33.511 111.420,30.167 C108.086,26.823 106.418,22.671 106.418,17.711 C106.418,12.751 108.086,8.599 111.420,5.255 C114.755,1.911 118.951,0.239 124.010,0.239 C127.038,0.239 129.841,0.935 132.419,2.327 C134.996,3.719 137.026,5.615 138.509,8.015 L131.839,11.855 C131.098,10.543 130.034,9.527 128.650,8.807 C127.264,8.087 125.717,7.727 124.010,7.727 C121.014,7.727 118.621,8.639 116.833,10.463 C115.045,12.287 114.151,14.703 114.151,17.711 C114.151,20.719 115.045,23.135 116.833,24.959 C118.621,26.783 121.014,27.695 124.010,27.695 ZM93.853,0.911 L101.586,0.911 L101.586,34.511 L93.853,34.511 L93.853,0.911 ZM69.593,34.511 L58.574,0.911 L67.031,0.911 L74.522,25.631 L82.013,0.911 L90.471,0.911 L79.452,34.511 L69.593,34.511 ZM35.376,0.911 L56.399,0.911 L56.399,8.303 L43.109,8.303 L43.109,13.871 L55.191,13.871 L55.191,21.167 L43.109,21.167 L43.109,27.119 L56.641,27.119 L56.641,34.511 L35.376,34.511 L35.376,0.911 ZM14.112,34.511 L0.580,34.511 L0.580,0.911 L14.112,0.911 C18.783,0.911 22.690,2.519 25.832,5.735 C28.973,8.951 30.544,12.943 30.544,17.711 C30.544,22.479 28.973,26.471 25.832,29.687 C22.690,32.903 18.783,34.511 14.112,34.511 ZM20.612,10.871 C18.952,9.159 16.786,8.303 14.112,8.303 L8.313,8.303 L8.313,27.119 L14.112,27.119 C16.786,27.119 18.952,26.263 20.612,24.551 C22.271,22.839 23.101,20.559 23.101,17.711 C23.101,14.863 22.271,12.583 20.612,10.871 Z" />
+        </svg>
       </a>
       <span class="page-footer__address">г. Москва, ул. Строителей, 15</span>
-      <div class="page-footer__user-menu user-menu">
-        <a class="user-menu__item user-menu__item--login" href="#">Войти</a>
+      <div class="page-footer__user menu">
+        <a class="menu__link menu__link--white menu__link--login-yellow" href="#">Войти</a>
       </div>
-      <div class="page-footer__shop-menu shop-menu">
-        <a class="shop-menu__item shop-menu__item--compare" href="#">Сравнить</a>
-        <a class="shop-menu__item shop-menu__item--cart" href="#">Корзина</a>
+      <div class="page-footer__shop menu">
+        <a class="menu__link menu__link--white menu__link--compare-yellow" href="#">Сравнить</a>
+        <a class="menu__link menu__link--white menu__link--cart-yellow" href="#">Корзина</a>
       </div>
-      <ul class="page-footer__site-nav site-nav">
+      <ul class="page-footer__site site-nav">
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#">Доставка</a>
+          <a class="site-nav__link site-nav__link--white" href="#">Доставка</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#">Гарантия</a>
+          <a class="site-nav__link site-nav__link--white" href="#">Гарантия</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#">Контакты</a>
+          <a class="site-nav__link site-nav__link--white" href="#">Контакты</a>
         </li>
       </ul>
       <span class="page-footer__tel tel">
@@ -256,15 +261,15 @@
       <form class="popup__form" action="https://echo.htmlacademy.ru/" method="POST">
         <label class="form-field">
           <span class="form-field__label">Ваше имя</span>
-          <input class="form-field__input" type="text" name="name" placeholder="Имя фамилия">
+          <input class="form-field__input form-field__input--popup" type="text" name="name" placeholder="Имя фамилия">
         </label>
         <label class="form-field">
           <span class="form-field__label">Ваш e-mail</span>
-          <input class="form-field__input" type="email" name="email" placeholder="email@example.com">
+          <input class="form-field__input form-field__input--popup" type="email" name="email" placeholder="email@example.com">
         </label>
         <label class="form-field">
           <span class="form-field__label">Текст письма</span>
-          <textarea class="form-field__textarea" name="text" placeholder="В свободной форме"></textarea>
+          <textarea class="form-field__textarea form-field__textarea--popup" name="text" placeholder="В свободной форме"></textarea>
         </label>
         <button class="button" type="submit">Отправить</button>
       </form>
