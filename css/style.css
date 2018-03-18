@@ -119,6 +119,7 @@ a {
   content: "";
   position: absolute;
   top: calc(50% - 4px);
+  left: 0;
   z-index: -1;
   display: block;
   width: 100%;
@@ -127,7 +128,7 @@ a {
 }
 
 .button:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search-form__input::before {
@@ -326,7 +327,6 @@ a {
 .slider-controls__switcher--active {
   background-image: url("../img/slider-button.svg");
 }
-
 
 .category__title {
   font: 800 18px/1.33 "Gilroy", "Arial", sans-serif;
@@ -575,6 +575,15 @@ a {
   height: 32px;
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.3;
+}
+
+.social-links__item:hover {
+  opacity: 0.6;
+}
+
+.social-links__item:active {
+  opacity: 0.1;
 }
 
 .social-links__item--fb {
@@ -587,6 +596,14 @@ a {
 
 .social-links__item--tw {
   background-image: url("../img/social-twitter.svg");
+}
+
+.made-by:hover {
+  opacity: 0.6;
+}
+
+.made-by:active {
+  opacity: 0.3;
 }
 
 .popup__close {
@@ -619,6 +636,15 @@ a {
   font: 300 14px/1.71 "Open Sans", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.01em;
+  opacity: 0.3;
+}
+
+.breadcrumbs__link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs__link:active {
+  opacity: 0.1;
 }
 
 .filters__title {
@@ -628,10 +654,54 @@ a {
   letter-spacing: 0.2em;
 }
 
-.filters__group-title {
+.filters-form__title {
   font: 800 18px/1.33 "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.01em;
+}
+
+.range-control__label {
+  font: 300 14px/1.71 "Gilroy", "Arial", sans-serif;
+  color: #000000;
+  opacity: 0.2;
+}
+
+.range-control__text {
+  font: 300 14px/1.71 "Gilroy", "Arial", sans-serif;
+  color: #000000;
+  background: none;
+  border: none;
+  opacity: 0.2;
+}
+
+.checkbox__control:hover {
+  opacity: 0.6;
+}
+
+.checkbox__control:disabled {
+  opacity: 0.25;
+}
+
+.checkbox__control:disabled + .checkbox__label {
+  color: #a6a6a6;
+}
+
+.checkbox__label {
+  font: 300 14px/2.86 "Open Sans", "Arial", sans-serif;
+  color: #000000;
+}
+
+.radio__control:hover {
+  opacity: 0.6;
+}
+
+.radio__control:disabled {
+  opacity: 0.25;
+}
+
+.radio__label {
+  font: 300 14px/2.86 "Open Sans", "Arial", sans-serif;
+  color: #000000;
 }
 
 .sort__title {
@@ -644,6 +714,27 @@ a {
 .sort-options__link {
   font: 400 14px/1.29 "Open Sans", "Arial", sans-serif;
   color: #000000;
+  opacity: 0.3;
+}
+
+.sort-options__link:hover {
+  opacity: 0.6;
+}
+
+.sort-options__link:active {
+  opacity: 1;
+}
+
+.sort-order__link {
+  opacity: 0.2;
+}
+
+.sort-order__link:hover {
+  opacity: 0.4;
+}
+
+.sort-order__link:active {
+  opacity: 1;
 }
 
 .product__link {
@@ -664,29 +755,34 @@ a {
   letter-spacing: 0.01em;
   background: none;
   border: none;
+  opacity: 0.5;
 }
 
-.form-field__label {
-  font: 800 18px/1.33 "Gilroy", "Arial", sans-serif;
+.compare-btn:hover {
+  opacity: 1;
+}
+
+.compare-btn:active {
+  opacity: 0.2;
+}
+
+.pages {
+  background-color: #ebebeb;
+}
+
+.pages-switcher {
+  font: 800 16px/1.5 "Gilroy", "Arial", sans-serif;
   color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: all 0.3s ease;
 }
 
-.form-field__label--price-from,
-.form-field__label--price-to,
-.form-field__input--price--from,
-.form-field__input--price--to {
-  font: 300 14px/1.71 "Gilroy", "Arial", sans-serif;
-  color: #000000;
+.pages-switcher:hover {
+  background-color: #ebebeb;
 }
 
-.form-field__label--checkbox,
-.form-field__label--radio {
-  font: 300 14px/2.86 "Open Sans", "Arial", sans-serif;
-  letter-spacing: 0.01em;
-}
-
-.form-field__input--popup,
-.form-field__textarea--popup {
-  font: 300 14px/1.29 "Open Sans", "Arial", sans-serif;
-  color: #464646;
+.pages-switcher:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #ebebeb;
 }
