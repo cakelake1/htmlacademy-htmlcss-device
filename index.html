@@ -18,10 +18,8 @@
         </a>
         <div class="page-header__top">
           <form class="page-header__search-form search-form" action="https://echo.htmlacademy.ru/" method="POST">
-            <label class="search-form__input input">
-              <span class="visually-hidden">Поиск по сайту</span>
-              <input class="input__text input__text--search" type="search" name="query" placeholder="Поиск по сайту">
-            </label>
+            <label for="search-input" class="visually-hidden">Поиск по сайту</label>
+            <input class="input__text input__text--search" id="search-input" type="search" name="query" placeholder="Поиск по сайту">
             <button class="search-form__submit" type="submit">Найти</button>
           </form>
           <div class="page-header__user-menu user-menu">
@@ -267,11 +265,11 @@
           </a>
           <div class="page-footer__user-menu user-menu">
             <div class="user-menu__auth menu">
-              <a class="menu__link menu__link--white menu__link--login-yellow" href="#">Войти</a>
+              <a class="menu__link menu__link--white menu__link--login menu__link--login-yellow" href="#">Войти</a>
             </div>
             <div class="user-menu__shop menu">
-              <a class="menu__link menu__link--white menu__link--compare-yellow" href="#">Сравнить</a>
-              <a class="menu__link menu__link--white menu__link--cart-yellow" href="#">Корзина</a>
+              <a class="menu__link menu__link--white menu__link--compare menu__link--compare-yellow" href="#">Сравнить</a>
+              <a class="menu__link menu__link--white menu__link--cart menu__link--cart-yellow" href="#">Корзина</a>
             </div>
           </div>
         </div>

@@ -18,10 +18,8 @@
         </a>
         <div class="page-header__top">
           <form class="page-header__search-form search-form" action="https://echo.htmlacademy.ru/" method="POST">
-            <label class="search-form__input input">
-              <span class="visually-hidden">Поиск по сайту</span>
-              <input class="input__text input__text--search" type="search" name="query" placeholder="Поиск по сайту">
-            </label>
+            <label for="search-input" class="visually-hidden">Поиск по сайту</label>
+            <input class="input__text input__text--search" id="search-input" type="search" name="query" placeholder="Поиск по сайту">
             <button class="search-form__submit" type="submit">Найти</button>
           </form>
           <div class="page-header__user-menu user-menu">
@@ -149,7 +147,7 @@
           <header class="catalog__sort sort">
             <span class="sort__title">Сортировка:</span>
             <div class="sort__options sort-options">
-              <a class="sort-options__link" href="#">По&nbsp;цене</a>
+              <a class="sort-options__link sort-options__link--active" href="#">По&nbsp;цене</a>
               <a class="sort-options__link" href="#">По&nbsp;типу</a>
               <a class="sort-options__link" href="#">По&nbsp;популярности</a>
             </div>
@@ -204,7 +202,7 @@
                 <span class="product__price">2&nbsp;500&nbsp;руб.</span>
               </div>
             </article>
-            <article class="products__item product">
+            <article class="products__item products__item--new product">
               <div class="product__photo">
                 <img class="product__img" src="img/catalog-item-4.jpg" alt="Изображение селфи-палки &laquo;Следуй за мной&raquo;" width="360" height="380">
                 <div class="product__hover">
@@ -214,7 +212,7 @@
               </div>
               <div class="product__info">
                 <h3 class="product__title">
-                  <a class="product__link" href="#">Селфи-палка &laquo;Следуй за&nbsp;мной&raquo;</a>
+                  <a class="product__link" href="#">Селфи-палка &laquo;Следуй за мной&raquo;</a>
                 </h3>
                 <span class="product__price">4&nbsp;900&nbsp;руб.</span>
               </div>
@@ -225,7 +223,7 @@
               <a class="pages__back pages-switcher" href="#">Назад</a>
               <ul class="pages__list">
                 <li class="pages__item">
-                  <a class="pages__link" href="#">1</a>
+                  <a class="pages__link pages__link--active" href="#">1</a>
                 </li>
                 <li class="pages__item">
                   <a class="pages__link" href="#">2</a>
@@ -250,12 +248,12 @@
           </a>
           <div class="page-footer__user-menu user-menu">
             <div class="user-menu__auth menu">
-              <a class="menu__link menu__link--white menu__link--login-yellow" href="#">Валентин Петухов</a>
+              <a class="menu__link menu__link--white menu__link--login menu__link--login-yellow" href="#">Валентин Петухов</a>
               <a class="menu__link menu__link--white menu__link--logout" href="#">Выйти</a>
             </div>
             <div class="user-menu__shop menu">
-              <a class="menu__link menu__link--white menu__link--compare-yellow" href="#">Сравнить</a>
-              <a class="menu__link menu__link--white menu__link--cart-yellow" href="#">Корзина</a>
+              <a class="menu__link menu__link--white menu__link--compare menu__link--compare-yellow" href="#">Сравнить</a>
+              <a class="menu__link menu__link--white menu__link--cart menu__link--cart-yellow" href="#">Корзина</a>
             </div>
           </div>
         </div>
