@@ -14,6 +14,22 @@
   src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
+@font-face {
+  font-weight: 300;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
 body {
   margin: 0;
   font: 300 15px/2 "Open Sans", "Arial", sans-serif;
