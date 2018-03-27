@@ -36,7 +36,7 @@
           <nav class="main-nav">
             <ul class="main-nav__site site-nav">
               <li class="site-nav__item submenu">
-                <a class="site-nav__link submenu__toggle" href="catalog.html">Каталог товаров</a>
+                <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
                 <div class="submenu__inner">
                   <div class="submenu__group">
                     <a class="submenu__link" href="#">Виртуальная реальность</a>
@@ -106,23 +106,23 @@
                 <fieldset class="filters-form__group filter-color">
                   <legend class="filters-form__title">Цвет</legend>
                   <label class="filter-color__checkbox checkbox">
-                    <input class="checkbox__control" type="checkbox" name="color" value="black" checked>
+                    <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="black" checked>
                     <span class="checkbox__label">Черный</span>
                   </label>
                   <label class="filter-color__checkbox checkbox">
-                    <input class="checkbox__control" type="checkbox" name="color" value="white">
+                    <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="white">
                     <span class="checkbox__label">Белый</span>
                   </label>
                   <label class="filter-color__checkbox checkbox">
-                    <input class="checkbox__control" type="checkbox" name="color" value="blue" checked>
+                    <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="blue" checked>
                     <span class="checkbox__label">Синий</span>
                   </label>
                   <label class="filter-color__checkbox checkbox">
-                    <input class="checkbox__control" type="checkbox" name="color" value="red" checked>
+                    <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="red" checked>
                     <span class="checkbox__label">Красный</span>
                   </label>
                   <label class="filter-color__checkbox checkbox">
-                    <input class="checkbox__control" type="checkbox" name="color" value="pink">
+                    <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="pink">
                     <span class="checkbox__label">Розовый</span>
                   </label>
                 </fieldset>
@@ -156,11 +156,12 @@
             </div>
           </header>
           <section class="products">
+            <h2 class="visually-hidden">Список товаров категории "Моноподы для селфи"</h2>
             <article class="products__item product">
               <div class="product__photo">
                 <img class="product__img" src="img/catalog-item-1.jpg" alt="Изображение любительской селфи-палки" width="360" height="380">
                 <div class="product__hover">
-                  <a href="#" class="product__cart-btn button" type="button">В&nbsp;корзину</a>
+                  <a href="#" class="product__cart-btn button">В&nbsp;корзину</a>
                   <button class="product__compare-btn compare-btn" type="button">Добавить к&nbsp;сравнению</button>
                 </div>
               </div>
@@ -175,7 +176,7 @@
               <div class="product__photo">
                 <img class="product__img" src="img/catalog-item-2.jpg" alt="Изображение профессиональной селфи-палки" width="360" height="380">
                 <div class="product__hover">
-                  <a href="#" class="product__cart-btn button" type="button">В&nbsp;корзину</a>
+                  <a href="#" class="product__cart-btn button">В&nbsp;корзину</a>
                   <button class="product__compare-btn compare-btn" type="button">Добавить к&nbsp;сравнению</button>
                 </div>
               </div>
@@ -190,7 +191,7 @@
               <div class="product__photo">
                 <img class="product__img" src="img/catalog-item-3.jpg" alt="Изображение непотопляемой селфи-палки" width="360" height="380">
                 <div class="product__hover">
-                  <a href="#" class="product__cart-btn button" type="button">В&nbsp;корзину</a>
+                  <a href="#" class="product__cart-btn button">В&nbsp;корзину</a>
                   <button class="product__compare-btn compare-btn" type="button">Добавить к&nbsp;сравнению</button>
                 </div>
               </div>
@@ -201,11 +202,11 @@
                 <span class="product__price">2&nbsp;500&nbsp;руб.</span>
               </div>
             </article>
-            <article class="products__item products__item--new product">
+            <article class="products__item product product--new">
               <div class="product__photo">
                 <img class="product__img" src="img/catalog-item-4.jpg" alt="Изображение селфи-палки &laquo;Следуй за мной&raquo;" width="360" height="380">
                 <div class="product__hover">
-                  <a href="#" class="product__cart-btn button" type="button">В&nbsp;корзину</a>
+                  <a href="#" class="product__cart-btn button">В&nbsp;корзину</a>
                   <button class="product__compare-btn" type="button">Добавить к&nbsp;сравнению</button>
                 </div>
               </div>
@@ -247,7 +248,7 @@
           </a>
           <div class="page-footer__user-menu user-menu">
             <div class="user-menu__auth menu">
-              <a class="menu__link menu__link--white menu__link--login menu__link--login-yellow" href="#">Валентин Петухов</a>
+              <a class="menu__link menu__link--white menu__link--login menu__link--login-yellow" href="profile.html">Валентин Петухов</a>
               <a class="menu__link menu__link--white menu__link--logout" href="#">Выйти</a>
             </div>
             <div class="user-menu__shop menu">
