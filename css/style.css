@@ -210,6 +210,7 @@ a {
   letter-spacing: 0.01em;
   opacity: 0.3;
   transition: opacity 0.3s ease;
+  -webkit-appearance: none;
 }
 
 .input__text--search:hover {
@@ -289,11 +290,15 @@ a {
   margin-right: auto;
 }
 
+.menu {
+  display: flex;
+}
+
 .menu__link {
   position: relative;
   margin-right: 33px;
   padding-left: 26px;
-  font: 300 15px/50px "Open Sans", "Arial", sans-serif;
+  font: 300 15px "Open Sans", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.01em;
   transition: opacity 0.3s ease;
@@ -1512,7 +1517,7 @@ a {
   margin-bottom: 45px;
 }
 
-.products__item:nth-child(2n) {
+.products__item:nth-of-type(2n) {
   margin-right: 0;
 }
 
@@ -1798,10 +1803,6 @@ a {
   margin-top: 5px;
   padding: 16px 20px;
   background-color: #f2f2f2;
-}
-
-.input__text--popup {
-  color: red;
 }
 
 .popup-form__middle {
