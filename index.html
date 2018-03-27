@@ -300,26 +300,34 @@
         </div>
       </div>
     </footer>
-    <!-- <section class="popup popup--feedback">
+    <section class="popup popup--feedback">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="popup-form" action="https://echo.htmlacademy.ru/" method="POST">
-        <label class="popup-form__input input">
-          <span class="input__label">Ваше имя</span>
-          <input class="input__text input__text--popup" type="text" name="name" placeholder="Имя фамилия">
-        </label>
-        <label class="popup-form__input input">
-          <span class="input__label">Ваш e-mail</span>
-          <input class="input__text input__text--popup" type="email" name="email" placeholder="email@example.com">
-        </label>
-        <label class="popup-form__textarea textarea">
-          <span class="textarea__label">Текст письма</span>
-          <textarea class="textarea__text textarea__text--popup" name="text" placeholder="В свободной форме"></textarea>
-        </label>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <button class="popup__close popup__close--feedback" aria-label="Закрыть поп-ап 'Напишите нам'"></button>
+      <div class="popup__inner">
+        <button class="popup__close popup__close--feedback" aria-label="Закрыть поп-ап 'Напишите нам'"></button>
+        <form class="popup__form popup-form" action="https://echo.htmlacademy.ru/" method="POST">
+          <div class="popup-form__top">
+            <label class="popup-form__input input">
+              <span class="input__label">Ваше имя:</span>
+              <input class="input__text input__text--popup" type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+            <label class="popup-form__input input">
+              <span class="input__label">Ваш e-mail:</span>
+              <input class="input__text input__text--popup" type="email" name="email" placeholder="email@example.com">
+            </label>
+          </div>
+          <div class="popup-form__middle">
+            <label class="popup-form__textarea textarea">
+              <span class="textarea__label">Текст письма:</span>
+              <textarea class="textarea__text textarea__text--popup" name="text" placeholder="В свободной форме"></textarea>
+            </label>
+          </div>
+          <div class="popup-form__bottom">
+            <button class="button button--popup" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
     </section>
-    <section class="popup popup--map">
+<!--     <section class="popup popup--map">
       <h2 class="visually-hidden">Где мы находимся</h2>
       <div class="map-container">
         <img src="img/map-big.jpg" alt="Наш офис находится по адресу улица Строителей, дом 15" width="960" height="559">
