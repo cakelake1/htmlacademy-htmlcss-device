@@ -90,21 +90,27 @@
           </div>
           <div class="filters__bottom">
             <form class="filters__form filters-form" action="https://echo.htmlacademy.ru/" method="POST">
-                <fieldset class="filters-form__group filter-price">
-                  <legend class="filters-form__title">Стоимость</legend>
+                <div class="filters-form__group filter-price">
+                  <h3 class="filters-form__title">Стоимость</h3>
                   <div class="filter-price__range range">
-                    <label class="range__from range-control">
-                      <span class="range-control__label">от</span>
-                      <input class="range-control__text" name="price-from" type="text" placeholder="0">
-                    </label>
-                    <label class="range__to range-control">
-                      <span class="range-control__label">до</span>
-                      <input class="range-control__text" name="price-to" type="text" placeholder="5000">
-                    </label>
+                    <div class="range__bar">
+                      <div class="range__from"></div>
+                      <div class="range__to"></div>
+                    </div>
+                    <div class="range__inputs range-inputs">
+                      <label class="range-input range-input--from">
+                        от
+                        <input class="range-input__text" name="price-from" type="text" placeholder="0" value="0">
+                      </label>
+                      <label class="range-input range-input--to">
+                        до
+                        <input class="range-input__text" name="price-to" type="text" placeholder="5000" value="5000">
+                      </label>
+                    </div>
                   </div>
-                </fieldset>
-                <fieldset class="filters-form__group filter-color">
-                  <legend class="filters-form__title">Цвет</legend>
+                </div>
+                <div class="filters-form__group filter-color">
+                  <h3 class="filters-form__title">Цвет</h3>
                   <label class="filter-color__checkbox checkbox">
                     <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="black" checked>
                     <span class="checkbox__label">Черный</span>
@@ -125,18 +131,18 @@
                     <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="pink">
                     <span class="checkbox__label">Розовый</span>
                   </label>
-                </fieldset>
-                <fieldset class="filters-form__group filter-bluetooth">
-                  <legend class="filters-form__title">Bluetooth</legend>
+                </div>
+                <div class="filters-form__group filter-bluetooth">
+                  <h3 class="filters-form__title">Bluetooth</h3>
                   <label class="filter-bluetooth__radio radio">
-                    <input class="radio__control" type="radio" name="bluetooth" value="on">
+                    <input class="visually-hidden radio__control" type="radio" name="bluetooth" checked value="on">
                     <span class="radio__label">Есть</span>
                   </label>
                   <label class="filter-bluetooth__radio radio">
-                    <input class="radio__control" type="radio" name="bluetooth" value="off">
+                    <input class="visually-hidden radio__control" type="radio" name="bluetooth" value="off">
                     <span class="radio__label">Нет</span>
                   </label>
-                </fieldset>
+                </div>
                 <button class="button" type="submit">Показать</button>
             </form>
           </div>
