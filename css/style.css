@@ -388,7 +388,7 @@ a {
 }
 
 .page-header__bottom {
-  padding: 25px 60px 47px;
+  padding: 26px 60px 45px;
   background-color: #f7e296;
 }
 
@@ -431,21 +431,19 @@ a {
 .submenu {
   position: relative;
   margin-right: 321px;
-}
-
-.submenu__toggle {
-  position: relative;
   padding-right: 30px;
+  z-index: 1;
 }
 
-.submenu__toggle::after {
+.submenu::after {
   content: "";
   position: absolute;
-  top: 1px;
+  top: 6px;
   right: 3px;
   display: block;
   width: 16px;
   height: 16px;
+  z-index: 2;
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: center center;
