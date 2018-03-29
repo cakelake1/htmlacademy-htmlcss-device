@@ -130,13 +130,17 @@ a {
 
 .page-header {
   position: relative;
-  padding-top: 40px;
+  padding-top: 22px;
+}
+
+.page-header__top {
+  padding: 0 60px;
+  background: linear-gradient(#ffffff 18px, #f7e296 18px);
 }
 
 .page-header__logo {
-  position: absolute;
-  top: -19px;
-  left: 79px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .logo {
@@ -159,10 +163,10 @@ a {
   fill: #ffc600;
 }
 
-.page-header__top {
+.page-header__middle {
   display: flex;
   justify-content: space-between;
-  padding: 33px 60px 2px;
+  padding: 6px 60px 0;
   background-color: #f7e296;
 }
 
@@ -388,7 +392,7 @@ a {
 }
 
 .page-header__bottom {
-  padding: 26px 60px 45px;
+  padding: 27px 60px 47px;
   background-color: #f7e296;
 }
 
@@ -430,9 +434,9 @@ a {
 
 .submenu {
   position: relative;
-  margin-right: 321px;
-  padding-right: 30px;
   z-index: 1;
+  margin-right: 291px;
+  padding-right: 30px;
 }
 
 .submenu::after {
@@ -440,10 +444,10 @@ a {
   position: absolute;
   top: 6px;
   right: 3px;
+  z-index: 2;
   display: block;
   width: 16px;
   height: 16px;
-  z-index: 2;
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -509,20 +513,11 @@ a {
   position: relative;
 }
 
-.popular-slider__container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 20px;
-  width: 1160px;
-  height: 114px;
-  background-color: #f7e296;
-}
-
 .popular-slider__slides {
   margin: 0;
-  padding: 5px 60px 0;
+  padding: 0 60px;
   list-style: none;
+  background: linear-gradient(#f7e296 113px, transparent 113px);
 }
 
 .popular-slide {
@@ -537,8 +532,8 @@ a {
 .popular-slide::before {
   content: "";
   position: absolute;
-  top: -25px;
-  right: -15px;
+  top: -24px;
+  right: -14px;
   display: block;
   font: 800 180px "Gilroy", "Arial", sans-serif;
   color: #ffffff;
@@ -564,15 +559,15 @@ a {
 
 .popular-slide__info {
   position: relative;
-  /* flex-basis: 499px; */
   width: 501px;
-  padding-top: 79px;
+  margin-top: 40px;
+  padding-top: 43px;
 }
 
 .popular-slide__info::before {
   content: "";
   position: absolute;
-  top: 35px;
+  top: 0;
   left: 1px;
   display: block;
   width: 100px;
@@ -581,7 +576,7 @@ a {
 }
 
 .popular-slide__lead {
-  margin: 0 0 19px;
+  margin: 0 0 20px;
   font: 800 47px/1.19 "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.01em;
@@ -598,7 +593,6 @@ a {
 .popular-slide__button {
   display: inline-flex;
   margin-bottom: 48px;
-  margin-left: 1px;
 }
 
 .properties-table__value {
@@ -618,14 +612,14 @@ a {
 
 .popular-slider__controls {
   position: absolute;
-  top: 321px;
+  top: 318px;
   right: 103px;
 }
 
 .slider-controls__switcher {
   width: 12px;
   height: 12px;
-  margin-right: 15px;
+  margin-right: 17px;
   padding: 0;
   background-image: url("../img/slider-button-empty.svg");
   background-repeat: no-repeat;
@@ -644,7 +638,7 @@ a {
 }
 
 .categories {
-  padding-top: 95px;
+  padding-top: 100px;
 }
 
 .categories-list {
@@ -677,7 +671,6 @@ a {
 
 .category__icon::before {
   content: "";
-  position: relative;
   position: absolute;
   top: 0;
   left: 0;
@@ -748,7 +741,7 @@ a {
 
 .services-slider {
   min-height: 350px;
-  padding-top: 41px;
+  padding-top: 40px;
   padding-bottom: 40px;
   background: linear-gradient(transparent 141px, #e5e5e5 141px);
 }
@@ -895,7 +888,7 @@ a {
 
 .services-slider__title {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   padding: 0;
   font: 800 47px/1.19 "Gilroy", "Arial", sans-serif;
   color: #000000;
@@ -903,7 +896,6 @@ a {
 }
 
 .services-slider__description {
-  /* width: 456px; */
   margin: 0;
   padding: 0;
   font: 300 15px/2 "Open Sans", "Arial", sans-serif;
@@ -922,7 +914,6 @@ a {
 
 .brands__item {
   position: relative;
-  display: inline-block;
   margin-right: 40px;
   line-height: 0;
 }
@@ -969,7 +960,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding-top: 140px;
-  padding-bottom: 82px;
+  padding-bottom: 80px;
 }
 
 .about {
@@ -1009,7 +1000,7 @@ a {
 
 .about__partners-list {
   margin: 0;
-  margin-bottom: 53px;
+  margin-bottom: 55px;
   padding: 0;
   padding-top: 35px;
   list-style: none;
@@ -1043,7 +1034,6 @@ a {
   position: relative;
   flex-basis: 560px;
   width: 560px;
-  /*padding-top: 140px;*/
 }
 
 .contacts::before {
@@ -1086,13 +1076,9 @@ a {
 }
 
 .page-footer {
-  padding-top: 52px;
+  padding-top: 55px;
   padding-bottom: 50px;
   background-color: #464646;
-}
-
-.page-footer__container {
-  /* display: flex; */
 }
 
 .page-footer__top {
@@ -1102,12 +1088,12 @@ a {
 }
 
 .page-footer__logo {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .page-footer__user-menu {
   min-width: 324px;
-  padding-top: 16px;
+  padding-top: 15px;
 }
 
 .page-footer__middle {
@@ -1122,7 +1108,7 @@ a {
 }
 
 .page-footer__nav {
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 .page-footer__tel {
@@ -1144,7 +1130,7 @@ a {
   position: relative;
   display: flex;
   padding-top: 29px;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
 }
 
 .page-footer__bottom::before {
@@ -1160,8 +1146,7 @@ a {
 
 .page-footer__social-links {
   margin-right: auto;
-  margin-left: 511px;
-  padding-top: 4px;
+  margin-left: 509px;
 }
 
 .social-links {
@@ -1204,9 +1189,7 @@ a {
   background-image: url("../img/social-twitter.svg");
 }
 
-.page-footer__made-by {
-  /*margin-left: auto;*/
-}
+
 
 .made-by {
   display: block;
@@ -1523,7 +1506,7 @@ a {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  padding-bottom: 77px;
+  padding-bottom: 76px;
   background-color: #ffffff;
 }
 
@@ -1627,14 +1610,15 @@ a {
   box-sizing: border-box;
   width: 853px;
   margin-right: auto;
-  padding-top: 70px;
+  padding-top: 45px;
   padding-right: 20px;
+  padding-bottom: 10px;
   padding-left: 72px;
 }
 
 .products__item {
   margin-right: 40px;
-  margin-bottom: 47px;
+  padding: 25px 0;
 }
 
 .products__item:nth-of-type(2n) {
@@ -1744,11 +1728,9 @@ a {
 .pages {
   box-sizing: border-box;
   width: 853px;
-  margin-top: -10px;
   margin-right: auto;
   padding-right: 20px;
   padding-left: 72px;
-  /*padding: 0 70px;*/
   background-color: #ffffff;
 }
 
