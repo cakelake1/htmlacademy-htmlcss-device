@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин гаджетов &laquo;Девайс&raquo;</title>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -246,10 +247,10 @@
           <section class="contacts">
             <h2 class="contacts__title">Контакты</h2>
             <p class="contacts__description">Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <div class="contacts__map-container map-container">
+            <a class="contacts__map-container map-container" href="where.html">
               <img class="map-container__map" src="img/map-small.jpg" alt="Наш офис находится по адресу улица Строителей, дом 15" width="560" height="222">
-            </div>
-            <a class="button" href="#">Напишите нам</a>
+            </a>
+            <a class="button" href="writeus.html">Напишите нам</a>
           </section>
         </div>
       </div>
@@ -307,17 +308,17 @@
           <div class="popup-form__top">
             <label class="popup-form__input input">
               <span class="input__label">Ваше имя:</span>
-              <input class="input__text input__text--popup" type="text" name="name" placeholder="Имя Фамилия">
+              <input class="input__text input__text--popup" type="text" name="name"  placeholder="Имя Фамилия">
             </label>
             <label class="popup-form__input input">
               <span class="input__label">Ваш e-mail:</span>
-              <input class="input__text input__text--popup" type="email" name="email" placeholder="email@example.com">
+              <input class="input__text input__text--popup" type="email" name="email"  placeholder="email@example.com">
             </label>
           </div>
           <div class="popup-form__middle">
             <label class="popup-form__textarea textarea">
               <span class="textarea__label">Текст письма:</span>
-              <textarea class="textarea__text textarea__text--popup" name="text" placeholder="В свободной форме"></textarea>
+              <textarea class="textarea__text textarea__text--popup" name="text"  placeholder="В свободной форме"></textarea>
             </label>
           </div>
           <div class="popup-form__bottom">

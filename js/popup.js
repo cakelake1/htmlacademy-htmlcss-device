@@ -12,15 +12,24 @@ function addPopupHandlers(openControl, closeControl, popup) {
   })
 }
 
+function addFocusHandler (input) {
+  var firstClass = input.classList[0];
+  input.addEventListener('focus', function () {
+    input.classList.remove(firstClass + '--invalid');
+  })
+}
+
 function validate(form) {
-  var fields = form.elements;
+  var inputs = form.querySelectorAll('input');
 
   form.addEventListener('submit', function(evt) {
     isValid = true;
 
-    for (var i = 0; i < fields.length && isValid; i++) {
-      if (fields[i].type !== 'submit') {
-        isValid = fields[i].value;
+    for (var i = 0; i < inputs.length; i++) {
+      if (!inputs[i].value) {
+        isValid = false;
+        var firstClass = inputs[i].classList[0];
+        inputs[i].classList.add(firstClass + '--invalid');
       }
     }
 
@@ -32,6 +41,12 @@ function validate(form) {
       }, 600)
     }
   })
+
+  console.log(inputs);
+
+  for (var i = 0; i < inputs.length; i++) {
+    addFocusHandler(inputs[i]);
+  }
 }
 
 var feedbackPopup = document.querySelector('.popup--feedback');
@@ -49,6 +64,7 @@ window.addEventListener('keyup', function(evt) {
   if (!popup) return;
   if (evt.keyCode === 27) {
     popup.classList.remove('popup--active');
+    document.body.classList.remove('prevent-scroll');
   }
 })
 
