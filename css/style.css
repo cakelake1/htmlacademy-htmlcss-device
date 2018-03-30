@@ -54,7 +54,7 @@ a {
   display: inline-flex;
   align-items: center;
   height: 40px;
-  padding: 0 41px;
+  padding: 0 40px;
   font: 800 18px/1.33 "Gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
@@ -468,7 +468,7 @@ a {
 }
 
 .site-nav__item {
-  margin-right: 35px;
+  margin-right: 34px;
 }
 
 .site-nav__item:last-child {
@@ -653,7 +653,7 @@ a {
 .popular-slide__info {
   position: relative;
   width: 501px;
-  margin-top: 40px;
+  margin-top: 38px;
   padding-top: 43px;
 }
 
@@ -669,8 +669,8 @@ a {
 }
 
 .popular-slide__lead {
-  margin: 0 0 20px;
-  font: 800 47px/1.19 "Gilroy", "Arial", sans-serif;
+  margin: 0 0 18px;
+  font: 800 47px/1.21 "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.01em;
 }
@@ -734,7 +734,7 @@ a {
 }
 
 .categories {
-  padding-top: 100px;
+  padding-top: 98px;
 }
 
 .categories-list {
@@ -847,8 +847,8 @@ a {
 
 .services-slider {
   min-height: 350px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 41px;
+  padding-bottom: 38px;
   background: -webkit-linear-gradient(transparent 141px, #e5e5e5 141px);
   background:      -o-linear-gradient(transparent 141px, #e5e5e5 141px);
   background:         linear-gradient(transparent 141px, #e5e5e5 141px);
@@ -1025,7 +1025,7 @@ a {
 
 .services-slider__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding: 0;
   font: 800 47px/1.19 "Gilroy", "Arial", sans-serif;
   color: #000000;
@@ -1104,8 +1104,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
-  padding-top: 140px;
-  padding-bottom: 80px;
+  padding-top: 141px;
+  padding-bottom: 81px;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -1122,7 +1122,7 @@ a {
 .about::before {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -49px;
   left: 0;
   display: block;
   width: 80px;
@@ -1132,7 +1132,7 @@ a {
 
 .about__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   padding: 0;
   font: 800 47px/1.19 "Gilroy", "Arial", sans-serif;
   color: #000000;
@@ -1152,7 +1152,7 @@ a {
   margin: 0;
   margin-bottom: 55px;
   padding: 0;
-  padding-top: 35px;
+  padding-top: 36px;
   list-style: none;
 }
 
@@ -1191,7 +1191,7 @@ a {
 .contacts::before {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -49px;
   left: 0;
   display: block;
   width: 80px;
@@ -1201,7 +1201,7 @@ a {
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   padding: 0;
   font: 800 47px/1.19 "Gilroy", "Arial", sans-serif;
   color: #000000;
@@ -1210,7 +1210,7 @@ a {
 
 .contacts__description {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   padding: 0;
   font: 300 15px/2 "Open Sans", "Arial", sans-serif;
   color: #464646;
@@ -1218,7 +1218,7 @@ a {
 }
 
 .contacts__map-container {
-  margin-bottom: 66px;
+  margin-bottom: 69px;
 }
 
 .map-container {
@@ -1269,7 +1269,7 @@ a {
 }
 
 .page-footer__nav {
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 .page-footer__tel {
@@ -1299,7 +1299,7 @@ a {
 .page-footer__bottom::before {
   content: "";
   position: absolute;
-  bottom: 28px;
+  bottom: 29px;
   left: 0;
   display: block;
   width: 80px;
@@ -1373,12 +1373,12 @@ a {
 }
 
 .catalog-page__top {
-  padding: 35px 60px 0;
+  padding: 33px 60px 0;
 }
 
 .page-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font: 800 47px/1.19 "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.01em;
@@ -1412,7 +1412,7 @@ a {
 }
 
 .breadcrumbs__item:nth-child(2)::after {
-  top: 13px;
+  top: 14px;
   right: 12px;
 }
 
@@ -1636,6 +1636,11 @@ a {
   border: none;
 }
 
+
+.filter-color {
+  padding-bottom: 1px;
+}
+
 .checkbox {
   cursor: pointer;
 }
@@ -1725,7 +1730,7 @@ a {
   flex-grow: 1;
   -ms-flex-direction: column;
       flex-direction: column;
-  padding-bottom: 76px;
+  padding-bottom: 77px;
   background-color: #ffffff;
 
   -webkit-box-direction: normal;
@@ -1745,7 +1750,7 @@ a {
   height: 70px;
   margin-right: auto;
   padding-right: 20px;
-  padding-left: 70px;
+  padding-left: 73px;
 
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1778,7 +1783,7 @@ a {
 }
 
 .sort-options__link {
-  margin-right: 25px;
+  margin-right: 28px;
   font: 400 14px/1.29 "Open Sans", "Arial", sans-serif;
   color: #000000;
   opacity: 0.3;
@@ -1807,7 +1812,7 @@ a {
   display: block;
   width: 11px;
   height: 10px;
-  margin-right: 19px;
+  margin-right: 17px;
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.2;
@@ -1848,7 +1853,7 @@ a {
   margin-right: auto;
   padding-top: 45px;
   padding-right: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
   padding-left: 72px;
 
   -ms-flex-wrap: wrap;
@@ -1856,7 +1861,7 @@ a {
 
 .products__item {
   margin-right: 40px;
-  padding: 25px 0;
+  padding: 24px 0 22px;
 }
 
 .products__item:nth-of-type(2n) {
@@ -1900,7 +1905,7 @@ a {
 
 .product__photo {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-size: 0;
 }
 
@@ -2005,7 +2010,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2014,13 +2018,11 @@ a {
   background-color: #ebebeb;
 
   -webkit-box-align: center;
-  -webkit-box-pack: justify;
   -ms-flex-align: center;
-  -ms-flex-pack: justify;
 }
 
 .pages-switcher {
-  height: 70px;
+  height: 69px;
   padding: 0 30px;
   font: 800 16px/70px "Gilroy", "Arial", sans-serif;
   color: #000000;
@@ -2045,12 +2047,15 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
+  margin-right: auto;
+  margin-left: 209px;
   padding: 0;
+  padding-top: 2px;
   list-style: none;
 }
 
 .pages__item {
-  margin-right: 25px;
+  margin-right: 28px;
 }
 
 .pages__item:last-child {
