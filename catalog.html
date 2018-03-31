@@ -86,82 +86,84 @@
           </ul>
         </div>
       </div>
-      <div class="catalog-container">
+      <div class="catalog-page__container">
         <section class="filters">
-          <div class="filters__top">
-            <h2 class="filters__title">Фильтр:</h2>
-          </div>
-          <div class="filters__bottom">
-            <form class="filters__form filters-form" action="https://echo.htmlacademy.ru/" method="POST">
-                <div class="filters-form__group filter-price">
-                  <h3 class="filters-form__title">Стоимость</h3>
-                  <div class="filter-price__range range">
-                    <div class="range__bar">
-                      <div class="range__from"></div>
-                      <div class="range__to"></div>
-                    </div>
-                    <div class="range__inputs range-inputs">
-                      <label class="range-input range-input--from">
-                        от
-                        <input class="range-input__text" name="price-from" type="text" placeholder="0" value="0">
-                      </label>
-                      <label class="range-input range-input--to">
-                        до
-                        <input class="range-input__text" name="price-to" type="text" placeholder="5000" value="5000">
-                      </label>
-                    </div>
+          <header class="filters__header">
+            <div class="filters__container">
+              <h2 class="filters__title">Фильтр:</h2>
+            </div>
+          </header>
+          <form class="filters__form filters-form" action="https://echo.htmlacademy.ru/" method="POST">
+              <div class="filters-form__group filter-price">
+                <h3 class="filters-form__title">Стоимость</h3>
+                <div class="filter-price__range range">
+                  <div class="range__bar">
+                    <div class="range__from"></div>
+                    <div class="range__to"></div>
+                  </div>
+                  <div class="range__inputs range-inputs">
+                    <label class="range-input range-input--from">
+                      от
+                      <input class="range-input__text" name="price-from" type="text" placeholder="0" value="0">
+                    </label>
+                    <label class="range-input range-input--to">
+                      до
+                      <input class="range-input__text" name="price-to" type="text" placeholder="5000" value="5000">
+                    </label>
                   </div>
                 </div>
-                <div class="filters-form__group filter-color">
-                  <h3 class="filters-form__title">Цвет</h3>
-                  <label class="filter-color__checkbox checkbox">
-                    <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="black" checked>
-                    <span class="checkbox__label">Черный</span>
-                  </label>
-                  <label class="filter-color__checkbox checkbox">
-                    <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="white">
-                    <span class="checkbox__label">Белый</span>
-                  </label>
-                  <label class="filter-color__checkbox checkbox">
-                    <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="blue" checked>
-                    <span class="checkbox__label">Синий</span>
-                  </label>
-                  <label class="filter-color__checkbox checkbox">
-                    <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="red" checked>
-                    <span class="checkbox__label">Красный</span>
-                  </label>
-                  <label class="filter-color__checkbox checkbox">
-                    <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="pink">
-                    <span class="checkbox__label">Розовый</span>
-                  </label>
-                </div>
-                <div class="filters-form__group filter-bluetooth">
-                  <h3 class="filters-form__title">Bluetooth</h3>
-                  <label class="filter-bluetooth__radio radio">
-                    <input class="visually-hidden radio__control" type="radio" name="bluetooth" checked value="on">
-                    <span class="radio__label">Есть</span>
-                  </label>
-                  <label class="filter-bluetooth__radio radio">
-                    <input class="visually-hidden radio__control" type="radio" name="bluetooth" value="off">
-                    <span class="radio__label">Нет</span>
-                  </label>
-                </div>
-                <button class="button" type="submit">Показать</button>
-            </form>
-          </div>
+              </div>
+              <div class="filters-form__group filter-color">
+                <h3 class="filters-form__title">Цвет</h3>
+                <label class="filter-color__checkbox checkbox">
+                  <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="black" checked>
+                  <span class="checkbox__label">Черный</span>
+                </label>
+                <label class="filter-color__checkbox checkbox">
+                  <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="white">
+                  <span class="checkbox__label">Белый</span>
+                </label>
+                <label class="filter-color__checkbox checkbox">
+                  <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="blue" checked>
+                  <span class="checkbox__label">Синий</span>
+                </label>
+                <label class="filter-color__checkbox checkbox">
+                  <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="red" checked>
+                  <span class="checkbox__label">Красный</span>
+                </label>
+                <label class="filter-color__checkbox checkbox">
+                  <input class="visually-hidden checkbox__control" type="checkbox" name="color" value="pink">
+                  <span class="checkbox__label">Розовый</span>
+                </label>
+              </div>
+              <div class="filters-form__group filter-bluetooth">
+                <h3 class="filters-form__title">Bluetooth</h3>
+                <label class="filter-bluetooth__radio radio">
+                  <input class="visually-hidden radio__control" type="radio" name="bluetooth" checked value="on">
+                  <span class="radio__label">Есть</span>
+                </label>
+                <label class="filter-bluetooth__radio radio">
+                  <input class="visually-hidden radio__control" type="radio" name="bluetooth" value="off">
+                  <span class="radio__label">Нет</span>
+                </label>
+              </div>
+              <button class="button" type="submit">Показать</button>
+          </form>
         </section>
         <section class="catalog">
-          <h2 class="visually-hidden">Каталог товаров</h2>
-          <header class="catalog__sort sort">
-            <span class="sort__title">Сортировка:</span>
-            <div class="sort__options sort-options">
-              <a class="sort-options__link sort-options__link--active" href="#">По&nbsp;цене</a>
-              <a class="sort-options__link" href="#">По&nbsp;типу</a>
-              <a class="sort-options__link" href="#">По&nbsp;популярности</a>
-            </div>
-            <div class="sort__order sort-order">
-              <a class="sort-order__link sort-order__link--increasing" href="#" aria-label="Отсортировать по возрастанию"></a>
-              <a class="sort-order__link sort-order__link--decreasing sort-order__link--active" href="#" aria-label="Отсортировать по убыванию"></a>
+          <header class="catalog__header">
+            <h2 class="visually-hidden">Каталог товаров</h2>
+            <div class="catalog__container sort">
+              <span class="sort__title">Сортировка:</span>
+              <div class="sort__options sort-options">
+                <a class="sort-options__link sort-options__link--active" href="#">По&nbsp;цене</a>
+                <a class="sort-options__link" href="#">По&nbsp;типу</a>
+                <a class="sort-options__link" href="#">По&nbsp;популярности</a>
+              </div>
+              <div class="sort__order sort-order">
+                <a class="sort-order__link sort-order__link--increasing" href="#" aria-label="Отсортировать по возрастанию"></a>
+                <a class="sort-order__link sort-order__link--decreasing sort-order__link--active" href="#" aria-label="Отсортировать по убыванию"></a>
+              </div>
             </div>
           </header>
           <section class="products">
