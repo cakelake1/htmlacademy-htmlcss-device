@@ -56,6 +56,7 @@ a {
   height: 40px;
   padding: 0 40px;
   font: 800 18px/1.33 "Gilroy", "Arial", sans-serif;
+  vertical-align: baseline;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -523,7 +524,7 @@ a {
 
 .submenu {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin-right: 291px;
 }
 
@@ -692,6 +693,7 @@ a {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 48px;
+  vertical-align: baseline;
 }
 
 .properties-table__value {
@@ -1229,6 +1231,7 @@ a {
   display: block;
   width: 560px;
   height: 222px;
+  font-size: 0;
   cursor: pointer;
 }
 
