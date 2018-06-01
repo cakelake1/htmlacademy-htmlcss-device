@@ -1,5 +1,5 @@
 # Личный проект «Девайс»
-[Посмотреть проект на GitHub pages](https://abrakadaaabra.github.io/194404-device)
+[Посмотреть проект на GitHub pages](https://abrakadaaabra.github.io/device)
 
 * Студент: [Артём Костельнюк](https://up.htmlacademy.ru/htmlcss/20/user/194404).
 * Наставник: [Александр Кошара](https://up.htmlacademy.ru/htmlcss/20/user/169035).
